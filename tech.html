@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>科技项目 · 金杰</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages/tech.css">
+</head>
+<body class="sub-page">
+<div class="page-wrap">
+  <nav class="nav scrolled">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <span class="nav-avatar" aria-label="个人头像">
+          <img src="assets/avatar.jpg" alt="金杰·头像" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <span class="av-ph">头</span>
+        </span>
+        <span class="brand-name">金杰<em>Jack / JJ</em></span>
+        <span class="brand-school">哈尔滨理工大学 · 通信工程</span>
+      </a>
+      <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="interest.html">兴趣爱好</a></li>
+        <li><a class="nav-link" href="tech.html">科技项目</a></li>
+        <li><a class="nav-link" href="travel.html">旅游足迹</a></li>
+        <li><a class="nav-link" href="contact.html">联系我</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="切换主题">
+          <span class="moon">☾</span><span class="sun">☀</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="sub-hero">
+      <h1>科技项目</h1>
+      <p>我的科技探索地图</p>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>我的科技探索地图</h2>
+          <p>Tech Exploration Map</p>
+        </div>
+        <div class="mindmap reveal">
+          <div class="mm-center">
+            <span class="mc-icon">🧠</span>
+            <div class="mc-title">科技探索</div>
+            <div class="mc-sub">CORE</div>
+          </div>
+          <svg class="mm-lines" aria-hidden="true"></svg>
+          <div class="mm-grid">
+            <div class="mm-branch">
+              <div class="mb-head"><div class="mb-icon">📡</div><h3>通信技术方向</h3></div>
+              <div class="mm-leaves">
+                <div class="mm-leaf">基带参数研究<div class="lf-desc">关注调制方式、信道带宽与射频链路关键指标。</div></div>
+                <div class="mm-leaf">网络协议<div class="lf-desc">TCP/IP 协议栈与无线接入流程，从物理层到应用层，涉及 ARP、ARPA 协议的校验。</div></div>
+                <div class="mm-leaf">信号处理<div class="lf-desc">滤波、采样、量化与频谱分析的基础认知。</div></div>
+              </div>
+            </div>
+            <div class="mm-branch">
+              <div class="mb-head"><div class="mb-icon">💻</div><h3>编程实践方向</h3></div>
+              <div class="mm-leaves">
+                <div class="mm-leaf">代码开发（Python）<div class="lf-desc">脚本编写、数据处理与自动化任务的常用语言。</div></div>
+                <div class="mm-leaf">项目实践（爬虫开发）<div class="lf-desc">多站点数据采集、解析与清洗的完整流程，涉及 Requests、DrissionPage、Pandas 等常用库与工具。</div></div>
+                <div class="mm-leaf">调试能力<div class="lf-desc">不断夯实编程语言基础，借助 AI 赋能辅助，稳步提升调试效率与问题定位能力。</div></div>
+              </div>
+            </div>
+            <div class="mm-branch">
+              <div class="mb-head"><div class="mb-icon">🔌</div><h3>硬件兴趣方向</h3></div>
+              <div class="mm-leaves">
+                <div class="mm-leaf">电子电路<div class="lf-desc">模拟与数字电路基础，元件特性与简单电路搭建。</div></div>
+              </div>
+            </div>
+            <div class="mm-branch">
+              <div class="mb-head"><div class="mb-icon">🛠</div><h3>工具与方法</h3></div>
+              <div class="mm-leaves">
+                <div class="mm-leaf">AI 工具应用<div class="lf-desc">提示词工程与效率工具链，把 AI 当成第二大脑。</div></div>
+                <div class="mm-leaf">自学能力<div class="lf-desc">资料检索、官方文档与系统性学习的习惯。</div></div>
+                <div class="mm-leaf">问题排查<div class="lf-desc">分治定位、最小复现与逐层验证的方法论。</div></div>
+              </div>
+            </div>
+          </div>
+          <p class="mm-tip">点击任意 <kbd>+</kbd> 节点展开说明 · 悬停查看高亮反馈</p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Python 项目作品</h2>
+          <p>Project Showcase</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="pj-head blue">
+              <div class="pj-icon">📝</div>
+              <div class="pj-title">
+                <h3>防作弊随机试卷生成器</h3>
+                <span class="pj-cat">文档自动化</span>
+              </div>
+              <a class="pj-download" href="assets/projects/anti-cheat-exam-generator.py" download title="下载源码">⬇</a>
+            </div>
+            <p class="pj-desc">利用标准库 <code>random</code> 实现「试卷编号 + 答案文档」各自独立随机打乱，批量生成 20 套互不相同的试卷与对应标准答案，杜绝邻座抄袭。</p>
+            <div class="pj-tags">
+              <span>Python</span><span>random</span><span>openpyxl</span><span>python-docx</span><span>双重独立随机</span><span>Word 批处理</span>
+            </div>
+            <button class="pj-toggle" aria-label="展开核心代码">查看核心代码 ▾</button>
+            <div class="pj-code">
+<pre><code><span class="cm"># 1. 不重复随机整数 — 控制抽题编号</span>
+<span class="kw">def</span> Random_num(num_max, num_qty):
+    num_list = []
+    <span class="kw">while</span> len(num_list) &lt; num_qty:
+        num = random.randint(<span class="nu">2</span>, num_max)
+        <span class="kw">if</span> num <span class="kw">not in</span> num_list:
+            num_list.append(num)
+    <span class="kw">return</span> num_list
+
+<span class="cm"># 2. 按编号从 Excel 题库抽取 4 类题型</span>
+<span class="kw">def</span> Question(que_type, numbers):
+    questions, wb = [], load_workbook(<span class="st">"题库.xlsx"</span>)
+    ws = wb[que_type]
+    <span class="kw">for</span> i <span class="kw">in</span> numbers:
+        q = ws[<span class="st">"B"</span>+str(i)].value       <span class="cm"># 题干</span>
+        right = ws[<span class="st">"G"</span>+str(i)].value   <span class="cm"># 正确答案</span>
+        questions.append([q, <span class="st">"A："</span>+a, ..., right])
+    <span class="kw">return</span> questions
+
+<span class="cm"># 3. 主循环 — 一次生成 20 套试卷 + 20 份答案</span>
+<span class="kw">for</span> number <span class="kw">in</span> range(<span class="nu">1</span>, <span class="nu">21</span>):
+    n1 = Random_num(<span class="nu">566</span>, <span class="nu">40</span>)  <span class="cm"># 单选</span>
+    n2 = Random_num(<span class="nu">196</span>, <span class="nu">20</span>)  <span class="cm"># 多选</span>
+    n3 = Random_num(<span class="nu">418</span>, <span class="nu">10</span>)  <span class="cm"># 判断</span>
+    n4 = Random_num(<span class="nu">190</span>, <span class="nu">10</span>)  <span class="cm"># 填空</span>
+    To_word(number, questions_data)
+    Answer(number, questions_data)</code></pre>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="pj-head green">
+              <div class="pj-icon">🔍</div>
+              <div class="pj-title">
+                <h3>小红书数据提取器</h3>
+                <span class="pj-cat">爬虫 / 数据采集</span>
+              </div>
+              <a class="pj-download" href="assets/projects/xhs-data-extractor.py" download title="下载源码">⬇</a>
+            </div>
+            <p class="pj-desc">使用 <code>DrissionPage</code> 的 ChromiumPage 监听小红书搜索接口，模拟滚动下拉触发懒加载，自动抓取笔记元数据并导出结构化 CSV 表格。</p>
+            <div class="pj-tags">
+              <span>Python</span><span>DrissionPage</span><span>API 监听</span><span>自动化滚动</span><span>CSV 导出</span><span>接口响应抓取</span>
+            </div>
+            <button class="pj-toggle" aria-label="展开核心代码">查看核心代码 ▾</button>
+            <div class="pj-code">
+<pre><code><span class="cm"># 1. 启动浏览器时开启 API 监听 — 只抓搜索接口</span>
+page = ChromiumPage()
+page.listen.start(
+    <span class="st">"https://so.xiaohongshu.com/api/sns/web/v2/search/notes"</span>,
+    method=<span class="st">'POST'</span>
+)
+page.get(<span class="st">f"https://www.xiaohongshu.com/search_result_ai?keyword=</span>{kw}<span class="st">"</span>)
+
+<span class="cm"># 2. 循环 20 次滚动加载 — 触发页面懒加载</span>
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="nu">20</span>):
+    page.scroll.to_bottom()
+    time.sleep(<span class="nu">1</span>)
+    res = page.listen.wait()          <span class="cm"># 监听返回抓包内容</span>
+    items = res.response.body[<span class="st">'data'</span>][<span class="st">'items'</span>]
+
+<span class="cm"># 3. 字段提取 + CSV 落地 — 9 个维度</span>
+allData.append([id, token, title, name, avatar,
+                liked_count, collected_count,
+                comment_count, shared_count])
+cf.writerow([<span class="st">'id'</span>,<span class="st">'token'</span>,<span class="st">'标题'</span>,<span class="st">'name'</span>,<span class="st">'头像'</span>,
+             <span class="st">'点赞'</span>,<span class="st">'收藏'</span>,<span class="st">'评论'</span>,<span class="st">'分享'</span>])</code></pre>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="pj-head orange">
+              <div class="pj-icon">🚄</div>
+              <div class="pj-title">
+                <h3>12306 火车票查询助手</h3>
+                <span class="pj-cat">查询 / API 调用</span>
+              </div>
+              <a class="pj-download" href="assets/projects/ticket-master.zip" download title="下载完整项目包">⬇</a>
+            </div>
+            <p class="pj-desc">通过命令行参数调用 12306 官方 <code>leftTicket/query</code> 接口实时获取余票，支持多车次类型过滤，以 <code>PrettyTable</code> + <code>colorama</code> 彩色表格输出各席别余票与起止站信息。</p>
+            <div class="pj-tags">
+              <span>Python</span><span>requests</span><span>docopt</span><span>prettytable</span><span>colorama</span><span>12306 API</span><span>命令行工具</span>
+            </div>
+            <button class="pj-toggle" aria-label="展开核心代码">查看核心代码 ▾</button>
+            <div class="pj-code">
+<pre><code><span class="cm"># 1. 中文站名 → 12306 英文代码映射</span>
+<span class="kw">from</span> stations <span class="kw">import</span> stations
+from_station = stations.get(arguments[<span class="st">'&lt;from&gt;'</span>])  <span class="cm"># 北京 → BJP</span>
+to_station   = stations.get(arguments[<span class="st">'&lt;to&gt;'</span>])    <span class="cm"># 上海 → SHH</span>
+url = <span class="st">"https://kyfw.12306.cn/otn/leftTicket/query?..."</span>
+
+<span class="cm"># 2. 接口字段解析 — result 以 | 分隔，按固定下标取值</span>
+<span class="kw">for</span> item <span class="kw">in</span> available_trains[<span class="st">'result'</span>]:
+    item = item.split(<span class="st">'|'</span>)
+    train_no  = item[<span class="nu">3</span>]     <span class="cm"># 车次号</span>
+    departure = item[<span class="nu">8</span>]     <span class="cm"># 出发时间</span>
+    arrival   = item[<span class="nu">9</span>]     <span class="cm"># 到达时间</span>
+    yd = item[-<span class="nu">4</span>]            <span class="cm"># 一等座</span>
+    ed = item[-<span class="nu">3</span>]            <span class="cm"># 二等座</span>
+
+<span class="cm"># 3. PrettyTable + Colorama 彩色表格</span>
+pt = PrettyTable()
+pt._set_field_names(header = [<span class="st">'车次'</span>,<span class="st">'起始站'</span>,<span class="st">'终点站'</span>,
+                              <span class="st">'出发时间'</span>,<span class="st">'到达时间'</span>,<span class="st">'历时'</span>,
+                              <span class="st">'一等座'</span>,<span class="st">'二等座'</span>,<span class="st">'软卧'</span>,
+                              <span class="st">'硬卧'</span>,<span class="st">'硬座'</span>,<span class="st">'无座'</span>])
+<span class="kw">for</span> train <span class="kw">in</span> self.train:
+    pt.add_row([self._color_print(start, Fore.MAGENTA),
+                self._color_print(end,   Fore.GREEN), ...])</code></pre>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>技能标签</h2>
+          <p>Skill Tags</p>
+        </div>
+        <div class="tech-card skill-wrap reveal">
+          <div class="tag-cloud">
+            <span class="tag">通信技术</span>
+            <span class="tag green">编程实践</span>
+            <span class="tag purple">基带参数</span>
+            <span class="tag orange">自学能力</span>
+            <span class="tag">科技探索</span>
+            <span class="tag green">Python</span>
+            <span class="tag purple">爬虫开发</span>
+            <span class="tag orange">AI 工具</span>
+            <span class="tag">网络协议</span>
+            <span class="tag green">Pandas</span>
+            <span class="tag purple">DrissionPage</span>
+            <span class="tag orange">问题排查</span>
+            <span class="tag">信号处理</span>
+            <span class="tag green">Requests</span>
+            <span class="tag purple">电子电路</span>
+            <span class="tag orange">API 调用</span>
+            <span class="tag">Word/Excel 自动化</span>
+            <span class="tag green">数据清洗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-credits">
+          <div class="credit-list">
+            <div class="credit-item"><span class="cr-role">策划</span><span class="cr-name">本人</span></div>
+            <div class="credit-item"><span class="cr-role">审核</span><span class="cr-name">本人</span></div>
+            <div class="credit-item"><span class="cr-role">设计提示词</span><span class="cr-name">本人</span></div>
+            <div class="credit-item"><span class="cr-role">前端开发</span><span class="cr-name">TraecodeCN</span></div>
+            <div class="credit-item"><span class="cr-role">提示词润色</span><span class="cr-name">TraeworkCN</span></div>
+          </div>
+          <p class="credit-tag">小小学生的AI练习作品</p>
+          <p class="credit-thanks">感谢同学们的配合与支持！</p>
+          <p class="credit-note">此网页仅作学习交流和自我介绍，如需另用它出请及时联系我。</p>
+          <p class="copyright">© 2026 金杰 · All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="footer-top" aria-label="返回顶部">↑</button>
+</div>
+<script src="js/nav.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/pages/tech.js"></script>
+</body>
+</html>

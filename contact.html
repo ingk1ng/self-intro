@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>联系我 · 金杰</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body class="sub-page">
+<div class="page-wrap">
+  <nav class="nav scrolled">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <span class="nav-avatar" aria-label="个人头像">
+          <img src="assets/avatar.jpg" alt="金杰·头像" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <span class="av-ph">头</span>
+        </span>
+        <span class="brand-name">金杰<em>Jack / JJ</em></span>
+        <span class="brand-school">哈尔滨理工大学 · 通信工程</span>
+      </a>
+      <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">首页</a></li>
+        <li><a class="nav-link" href="interest.html">兴趣爱好</a></li>
+        <li><a class="nav-link" href="tech.html">科技项目</a></li>
+        <li><a class="nav-link" href="travel.html">旅游足迹</a></li>
+        <li><a class="nav-link" href="contact.html">联系我</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="切换主题">
+          <span class="moon">☾</span><span class="sun">☀</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="sub-hero">
+      <h1>联系我</h1>
+      <p>期待与志同道合的同学们交流</p>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>联系我</h2>
+          <p>Get in Touch</p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="https://github.com/ingk1ng" target="_blank" rel="noopener">
+            <div class="cc-icon">🐙</div>
+            <h3>GitHub</h3>
+            <div class="cc-value">github.com/ingk1ng</div>
+            <div class="cc-action">前往主页 →</div>
+          </a>
+          <a class="contact-card cc-green reveal" href="mailto:2123797536@qq.com">
+            <div class="cc-icon">✉</div>
+            <h3>邮箱</h3>
+            <div class="cc-value">2123797536@qq.com</div>
+            <div class="cc-action">发送邮件 →</div>
+          </a>
+          <div class="contact-card cc-purple reveal" id="wechatCard">
+            <div class="cc-icon">💬</div>
+            <h3>微信</h3>
+            <div class="cc-value">Novus_Hello_World</div>
+            <div class="cc-action">查看二维码 →</div>
+          </div>
+        </div>
+        <p class="contact-note">期待与<span class="hl">志同道合</span>的同学交流，无论是通信技术、编程实践，还是游戏开黑，都欢迎来找我。</p>
+      </div>
+    </section>
+    <div class="qr-modal" id="qrModal">
+      <div class="qr-card">
+        <div class="qr-title">微信二维码</div>
+        <div class="qr-sub">扫一扫，加我好友</div>
+        <div class="qr-img" id="qrImg"><img src="assets/wechat-qr.jpg" alt="微信二维码"></div>
+        <div class="qr-wx">微信号：<span>Novus_Hello_World</span></div>
+        <button class="qr-close" id="qrClose" aria-label="关闭">×</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-credits">
+          <div class="credit-list">
+            <div class="credit-item"><span class="cr-role">策划</span><span class="cr-name">本人</span></div>
+            <div class="credit-item"><span class="cr-role">审核</span><span class="cr-name">本人</span></div>
+            <div class="credit-item"><span class="cr-role">设计提示词</span><span class="cr-name">本人</span></div>
+            <div class="credit-item"><span class="cr-role">前端开发</span><span class="cr-name">TraecodeCN</span></div>
+            <div class="credit-item"><span class="cr-role">提示词润色</span><span class="cr-name">TraeworkCN</span></div>
+          </div>
+          <p class="credit-tag">小小学生的AI练习作品</p>
+          <p class="credit-thanks">感谢同学们的配合与支持！</p>
+          <p class="credit-note">此网页仅作学习交流和自我介绍，如需另用它出请及时联系我。</p>
+          <p class="copyright">© 2026 金杰 · All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="footer-top" aria-label="返回顶部">↑</button>
+</div>
+<script src="js/nav.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/pages/contact.js"></script>
+</body>
+</html>

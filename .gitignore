@@ -1,0 +1,23 @@
+# ========== 本地开发临时脚本 & 数据 ==========
+*.py
+*.ps1
+_tmp_dl/
+_tmp*/
+
+# ========== 系统 / 编辑器 ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ========== Node / 包管理（如果之后引入） ==========
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========== Python 缓存 ==========
+__pycache__/
+*.pyc
+*.pyo

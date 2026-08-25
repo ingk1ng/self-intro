@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>404 · 迷路啦</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body,html{min-height:100%;margin:0;background:#f8faff;color:#1d2640;font-family:"Noto Sans SC",sans-serif;}
+  html[data-theme="dark"] body{background:#0c0e12;color:#f0f3fb;}
+  .nf-wrap{min-height:100vh;display:grid;place-items:center;padding:48px 24px;position:relative;overflow:hidden;}
+  .nf-wrap::before,.nf-wrap::after{content:"";position:absolute;border-radius:50%;filter:blur(80px);opacity:.35;pointer-events:none;}
+  .nf-wrap::before{width:420px;height:420px;top:-120px;left:-120px;background:radial-gradient(circle,#5b8def,transparent 70%);}
+  .nf-wrap::after{width:480px;height:480px;bottom:-160px;right:-140px;background:radial-gradient(circle,#a371f0,transparent 70%);}
+  .nf-card{position:relative;width:100%;max-width:520px;padding:48px 40px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(79,124,255,.18);box-shadow:0 30px 80px rgba(30,45,90,.15);clip-path:polygon(0 16px,16px 0,calc(100% - 16px) 0,100% 16px,100% calc(100% - 16px),calc(100% - 16px) 100%,16px 100%,0 calc(100% - 16px));}
+  html[data-theme="dark"] .nf-card{background:rgba(18,22,32,.78);border-color:rgba(163,113,240,.24);}
+  .nf-code{font-family:"JetBrains Mono",monospace;font-size:96px;font-weight:700;line-height:1;letter-spacing:-2px;background:linear-gradient(135deg,#5b8def 0%,#a371f0 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin:0 0 8px;}
+  .nf-title{font-size:26px;font-weight:700;margin:0 0 10px;color:#1d2640;}
+  html[data-theme="dark"] .nf-title{color:#f0f3fb;}
+  .nf-desc{font-size:14.5px;line-height:1.8;color:#556082;margin:0 0 28px;}
+  html[data-theme="dark"] .nf-desc{color:#93a0c0;}
+  .nf-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .nf-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:12px;font-size:14px;font-weight:500;cursor:pointer;border:none;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s cubic-bezier(.2,.7,.2,1),background .25s;}
+  .nf-btn:hover{transform:translateY(-2px);}
+  .nf-btn.primary{background:linear-gradient(135deg,#5b8def 0%,#a371f0 100%);color:#fff;box-shadow:0 10px 30px rgba(91,141,239,.28);}
+  .nf-btn.ghost{background:transparent;color:#5b8def;border:1px solid rgba(91,141,239,.38);}
+  .nf-hint{margin-top:22px;padding-top:18px;border-top:1px dashed rgba(125,140,180,.25);font-size:12.5px;color:#7a86a8;}
+  html[data-theme="dark"] .nf-hint{color:#647092;}
+  .nf-hint code{font-family:"JetBrains Mono",monospace;padding:2px 7px;border-radius:5px;background:rgba(91,141,239,.10);color:#5b8def;}
+  html[data-theme="dark"] .nf-hint code{background:rgba(91,141,239,.16);color:#93b0ff;}
+</style>
+</head>
+<body>
+<div class="nf-wrap">
+  <div class="nf-card">
+    <p class="nf-code">404</p>
+    <h1 class="nf-title">页面走丢了</h1>
+    <p class="nf-desc">可能是链接输入有误，或者这页已经被我偷偷搬走了。不如先回首页慢慢逛逛，其他模块都还在正常营业～</p>
+    <div class="nf-actions">
+      <a class="nf-btn primary" href="index.html">🏠 回到首页</a>
+      <a class="nf-btn ghost" href="interest.html">🎮 去兴趣页</a>
+      <a class="nf-btn ghost" href="tech.html">🔬 去科技页</a>
+    </div>
+    <p class="nf-hint">如果是部署在子路径下（如 <code>/username.github.io/repo/</code>），请确认 GitHub Pages 的仓库名前缀一致。</p>
+  </div>
+</div>
+<script>
+  (function(){
+    try{
+      var s = localStorage.getItem('theme-pref');
+      if(s==='dark'||s==='light'){document.documentElement.setAttribute('data-theme',s);return;}
+    }catch(e){}
+    if(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches){document.documentElement.setAttribute('data-theme','dark');}
+  })();
+</script>
+</body>
+</html>
