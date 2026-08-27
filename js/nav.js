@@ -22,6 +22,14 @@
       if(v==='dark'||v==='light'){applyTheme(v);}
     }
   });
+  let _guard=false;
+  new MutationObserver(function(){
+    if(_guard)return;
+    var s=getStored();
+    var shouldDark=s==='dark'||(!s&&window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var isDark=root.getAttribute('data-theme')==='dark';
+    if(isDark!==shouldDark){_guard=true;applyTheme(shouldDark?'dark':'light');_guard=false;}
+  }).observe(root,{attributes:true,attributeFilter:['data-theme']});
 
   const nav=document.querySelector('.nav');
   const toggle=document.querySelector('.nav-toggle');
