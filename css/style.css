@@ -145,10 +145,10 @@ html[data-theme="dark"] .nav.scrolled{border-color:rgba(37,48,84,.9)}
 }
 .theme-toggle:hover{transform:rotate(-12deg) scale(1.08);color:var(--accent);border-color:rgba(79,124,255,.45);box-shadow:var(--shadow-hover)}
 .theme-toggle:active{transform:scale(.94)}
-.theme-toggle .sun{display:none}
-.theme-toggle .moon{display:inline-block}
-html[data-theme="dark"] .theme-toggle .sun{display:inline-block}
-html[data-theme="dark"] .theme-toggle .moon{display:none}
+.theme-toggle .sun,.theme-toggle .moon,.theme-toggle .auto{display:none}
+.theme-toggle[data-mode="light"] .sun{display:inline-block}
+.theme-toggle[data-mode="dark"] .moon{display:inline-block}
+.theme-toggle[data-mode="auto"] .auto{display:inline-block}
 .nav-link{
   position:relative;padding:9px 15px;font-size:14px;color:var(--text-dim);border-radius:10px;
   transition:color .25s cubic-bezier(.2,.7,.2,1),background .25s cubic-bezier(.2,.7,.2,1),transform .25s cubic-bezier(.2,.7,.2,1);letter-spacing:.5px;display:inline-block;
