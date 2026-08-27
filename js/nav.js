@@ -57,10 +57,22 @@
     });
   }
   if(themeBtn){
+    var curMode=stored==='dark'?'dark':stored==='light'?'light':'auto';
+    themeBtn.setAttribute('data-mode',curMode);
+    themeBtn.setAttribute('title','主题：'+(curMode==='auto'?'跟随系统':curMode==='dark'?'暗色':'亮色'));
     themeBtn.addEventListener('click',()=>{
-      const isDark=root.getAttribute('data-theme')==='dark';
-      applyTheme(isDark?'light':'dark');
-      setStored(isDark?'light':'dark');
+      var mode=themeBtn.getAttribute('data-mode');
+      var next=mode==='auto'?'light':mode==='light'?'dark':'auto';
+      themeBtn.setAttribute('data-mode',next);
+      themeBtn.setAttribute('title','主题：'+(next==='auto'?'跟随系统':next==='dark'?'暗色':'亮色'));
+      if(next==='auto'){
+        try{localStorage.removeItem(STORE_KEY);}catch(e){}
+        var sysDark=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(sysDark?'dark':'light');
+      }else{
+        applyTheme(next);
+        setStored(next);
+      }
     });
   }
   if(top){top.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));}
