@@ -1,15 +1,3 @@
-/* Google Analytics 4 (gtag.js) — Measurement ID G-RBWWPP3MJ */
-(function () {
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RBWWPP3MJ';
-  document.head.appendChild(s);
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function () { dataLayer.push(arguments); };
-  gtag('js', new Date());
-  gtag('config', 'G-RBWWPP3MJ');
-})();
-
 (function(){
   const root=document.documentElement;
   const STORE_KEY='jj-theme';
@@ -28,6 +16,12 @@
       if(!getStored()){applyTheme(e.matches?'dark':'light');}
     });
   }
+  window.addEventListener('storage',function(e){
+    if(e.key===STORE_KEY){
+      const v=e.newValue;
+      if(v==='dark'||v==='light'){applyTheme(v);}
+    }
+  });
 
   const nav=document.querySelector('.nav');
   const toggle=document.querySelector('.nav-toggle');
