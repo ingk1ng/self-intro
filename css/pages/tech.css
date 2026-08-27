@@ -150,3 +150,47 @@
 }
 
 html[data-theme="dark"] .pj-code pre{background:linear-gradient(135deg,#0a0f1c 0%,#15102b 100%);border-color:rgba(126,154,255,.18)}
+
+html[data-theme="dark"] .mm-center{box-shadow:0 10px 30px rgba(99,102,241,.3);background:linear-gradient(135deg,rgba(122,155,255,.18) 0%,rgba(139,152,255,.15) 45%,rgba(201,150,255,.18) 100%);border:1px solid rgba(126,154,255,.25);backdrop-filter:blur(6px)}
+html[data-theme="dark"] .mm-center .mc-icon{filter:saturate(1.2)}
+html[data-theme="dark"] .mm-center .mc-title{color:#eef1ff}
+html[data-theme="dark"] .mm-center .mc-sub{color:#a7afc3}
+html[data-theme="dark"] .mm-center:hover{box-shadow:0 14px 38px rgba(99,102,241,.42);border-color:rgba(126,154,255,.4)}
+
+html[data-theme="dark"] .mm-leaf{background:rgba(122,155,255,.08);border-color:rgba(122,155,255,.2);color:#a7c2ff}
+html[data-theme="dark"] .mm-leaf:hover{background:rgba(122,155,255,.16);color:#d4e3ff}
+html[data-theme="dark"] .mm-branch:nth-child(2) .mm-leaf{background:rgba(62,232,191,.08);border-color:rgba(62,232,191,.22);color:#52f0c2}
+html[data-theme="dark"] .mm-branch:nth-child(2) .mm-leaf:hover{background:rgba(62,232,191,.16);color:#7ff5d4}
+html[data-theme="dark"] .mm-branch:nth-child(3) .mm-leaf{background:rgba(201,150,255,.08);border-color:rgba(201,150,255,.24);color:#d4b3ff}
+html[data-theme="dark"] .mm-branch:nth-child(3) .mm-leaf:hover{background:rgba(201,150,255,.16);color:#e8d4ff}
+html[data-theme="dark"] .mm-branch:nth-child(4) .mm-leaf{background:rgba(255,160,143,.1);border-color:rgba(255,160,143,.26);color:#ffb3a6}
+html[data-theme="dark"] .mm-branch:nth-child(4) .mm-leaf:hover{background:rgba(255,160,143,.2);color:#ffcfc4}
+
+html[data-theme="dark"] .mm-branch .mb-icon{background:linear-gradient(135deg,rgba(122,155,255,.16),rgba(201,150,255,.16));border-color:rgba(122,155,255,.25)}
+html[data-theme="dark"] .mm-branch:nth-child(1) .mb-icon{background:linear-gradient(135deg,rgba(122,155,255,.2),rgba(139,152,255,.2));color:#7a9bff}
+html[data-theme="dark"] .mm-branch:nth-child(2) .mb-icon{background:linear-gradient(135deg,rgba(62,232,191,.2),rgba(16,185,129,.2));color:#3ee8bf}
+html[data-theme="dark"] .mm-branch:nth-child(3) .mb-icon{background:linear-gradient(135deg,rgba(201,150,255,.2),rgba(217,70,239,.2));color:#c996ff}
+html[data-theme="dark"] .mm-branch:nth-child(4) .mb-icon{background:linear-gradient(135deg,rgba(255,160,143,.22),rgba(245,158,11,.22));color:#ffa08f}
+
+html[data-theme="dark"] .mm-tip kbd{background:rgba(122,155,255,.12);border-color:rgba(122,155,255,.24);color:var(--accent)}
+
+html[data-theme="dark"] .pj-tags span{background:rgba(122,155,255,.1);border-color:rgba(122,155,255,.22);color:#7a9bff}
+html[data-theme="dark"] .pj-tags span:hover{background:rgba(122,155,255,.2)}
+html[data-theme="dark"] .project-card:nth-child(2) .pj-tags span{background:rgba(62,232,191,.1);border-color:rgba(62,232,191,.22);color:#3ee8bf}
+html[data-theme="dark"] .project-card:nth-child(2) .pj-tags span:hover{background:rgba(62,232,191,.2)}
+html[data-theme="dark"] .project-card:nth-child(3) .pj-tags span{background:rgba(255,160,143,.12);border-color:rgba(255,160,143,.24);color:#ffa08f}
+html[data-theme="dark"] .project-card:nth-child(3) .pj-tags span:hover{background:rgba(255,160,143,.22)}
+
+html[data-theme="dark"] .pj-toggle{background:rgba(122,155,255,.08);color:var(--accent);border-color:rgba(122,155,255,.22)}
+html[data-theme="dark"] .pj-toggle:hover{background:rgba(122,155,255,.16)}
+html[data-theme="dark"] .project-card:nth-child(2) .pj-toggle{background:rgba(62,232,191,.08);color:#3ee8bf;border-color:rgba(62,232,191,.24)}
+html[data-theme="dark"] .project-card:nth-child(2) .pj-toggle:hover{background:rgba(62,232,191,.16)}
+html[data-theme="dark"] .project-card:nth-child(3) .pj-toggle{background:rgba(255,160,143,.1);color:#ffa08f;border-color:rgba(255,160,143,.26)}
+html[data-theme="dark"] .project-card:nth-child(3) .pj-toggle:hover{background:rgba(255,160,143,.2)}
+
+html[data-theme="dark"] .pj-cat{color:var(--accent);background:rgba(122,155,255,.12)}
+html[data-theme="dark"] .pj-head.green .pj-cat{color:#3ee8bf;background:rgba(62,232,191,.14)}
+html[data-theme="dark"] .pj-head.orange .pj-cat{color:#ffa08f;background:rgba(255,160,143,.16)}
+html[data-theme="dark"] .pj-download{background:rgba(255,255,255,.06);border-color:var(--border)}
+html[data-theme="dark"] .pj-download:hover{background:rgba(122,155,255,.14);color:var(--accent)}
+html[data-theme="dark"] .pj-desc code{background:rgba(122,155,255,.12);color:var(--accent)}
